@@ -1,0 +1,20 @@
+/* custom.css */
+
+/* Set text color for heading and paragraph */
+h1.mt-5, h1.mt-5 + p {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* optional: for better contrast */
+}
+
+/* Add black-to-transparent fade overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    z-index: -1;
+}
+
