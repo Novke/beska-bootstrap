@@ -18,3 +18,25 @@ body::before {
     z-index: -1;
 }
 
+/* Navbar style improvements */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); /* slight transparency */
+}
+
+.navbar .nav-link.nav-custom {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white !important;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link.nav-custom:hover {
+    color: #ffc107 !important; /* bright yellow on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+}
+
+body {
+    padding-top: 70px; /* avoids text being hidden behind navbar */
+}
