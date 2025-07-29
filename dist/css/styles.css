@@ -10825,7 +10825,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: url("../assets/pic3.png") no-repeat center center fixed;
+  /* background: url("../assets/pic3.png") no-repeat center center fixed; */
   background-size: cover;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
