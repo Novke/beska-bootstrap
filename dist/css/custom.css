@@ -48,7 +48,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('dist/assets/zalazak.png') center/cover no-repeat;
+  background: url('../assets/zalazak.png') center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -82,6 +82,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 0.5px;
+  color: white;
 }
 
 .hero-title {
@@ -99,7 +100,7 @@ p {
 }
 
 .btn-hero {
-  background: var(--primary-color);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
   color: white;
   padding: 1rem 2.5rem;
   border: none;
@@ -109,19 +110,19 @@ p {
   text-decoration: none;
   display: inline-block;
   transition: var(--transition);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-hero:hover {
-  background: #234a24;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== GALLERY SECTION ===== */
 .gallery-section {
-  padding: 0;
+  padding: 3rem 0;
   background: var(--light);
 }
 
