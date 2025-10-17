@@ -1,78 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Beška Panorama</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panorama Beška – Villa Retreat</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div class="slideshow-container">
-        <div class="slide" style="background-image: url('assets/roze.png');"></div>
-        <div class="slide" style="background-image: url('assets/pic3.png');"></div>
-        <div class="slide" style="background-image: url('assets/rostilj.png');"></div>
-        <div class="slide" style="background-image: url('assets/zalazak.png');"></div>
-        <div class="slide" style="background-image: url('assets/kamin.png');"></div>
-        <div class="slide" style="background-image: url('assets/pic2.png');"></div>
-        <div class="slide" style="background-image: url('assets/unutra.png');"></div>
-        <div class="slide" style="background-image: url('assets/mostnoc.png');"></div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Need a family escape where everyone can relax? Had enough of city noise, deadlines, and chaos?</p>
+        <h1 class="hero-title">The rest you've been looking for</h1>
+        <p class="hero-subtitle">A private villa retreat in Beška – where peace and comfort meet</p>
+        <a href="#booking" class="btn btn-hero">See Available Dates</a>
+      </div>
     </div>
+  </section>
 
-
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#">Beška Panorama</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link nav-custom" href="https://www.booking.com/Share-xKE6ux" target="_blank">Book
-                            here</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-custom"
-                            href="https://www.google.com/maps/place/Panorama+Beška/@45.1645264,20.0716015,17z"
-                            target="_blank">See location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-custom" href="https://www.instagram.com/beska_panorama"
-                            target="_blank">Instagram</a>
-                    </li>
-                </ul>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container-fluid px-0">
+      <div class="row g-2">
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/pic1.png" alt="Sunset View" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Sunset Paradise</span>
             </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Page Content-->
-    <section>
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-6">
-                    <h1 class="mt-5">Welcome to the paradise...</h1>
-                    <p>
-                        Discover the gorgeous views of the Danube cruising beneath the bridge, in a cozy villa tucked
-                        away from the city lights.
-                    </p>
-                </div>
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/pic2.png" alt="Living Space" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Comfortable Living</span>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/rostilj.png" alt="Garden & BBQ" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Garden & BBQ</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/kamin.png" alt="Cozy Fireplace" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Cozy Fireplace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-2 mt-0">
+        <div class="col-md-6">
+          <div class="gallery-item">
+            <img src="assets/zalazak.png" alt="Panoramic Sunset" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Danube Sunsets</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/roze.png" alt="Terrace Views" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Terrace Views</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="gallery-item">
+            <img src="assets/unutra.png" alt="Interior" class="img-fluid">
+            <div class="gallery-overlay">
+              <span>Modern Interior</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emotional Hook -->
+  <section class="emotional-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="section-title">Your peaceful getaway above the Danube</h2>
+          <p class="emotional-text">
+            Far from the rush of city life, Panorama Beška is your invitation to pause.
+            Wake up to terrace mornings in the fresh air, spend quiet afternoons in the garden, 
+            and watch golden sunsets unfold at day's end.
+          </p>
+          <p class="emotional-text">
+            Here, nature brings calm, the villa brings comfort, and you find the space to reconnect 
+            – with loved ones, with yourself, with silence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Everything you need for a quiet stay</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h4>Your space, your rules</h4>
+            <p>Two bedrooms, a bathroom and a large living room, all private and entirely yours.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-couch"></i>
+            </div>
+            <h4>Feel at home</h4>
+            <p>Comfy living room, flat-screen TV, and a washing machine for longer stays.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h4>Relax outdoors</h4>
+            <p>Balcony, terrace, and garden views for fresh air and wide horizons.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h4>Cook, grill & gather</h4>
+            <p>Fully equipped kitchen, terrace dining, and BBQ facilities.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-temperature-high"></i>
+            </div>
+            <h4>Comfort in every season</h4>
+            <p>Air conditioning and heating for perfect temperature anytime.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h4>Stay connected</h4>
+            <p>Free WiFi across the property, strong enough for work or streaming.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-paw"></i>
+            </div>
+            <h4>Pets are welcome</h4>
+            <p>Bring your friend at no extra charge.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h4>Park without stress</h4>
+            <p>Free on-site private parking.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h4>Welcoming hosts</h4>
+            <p>English, Serbian, and Croatian spoken for smooth communication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="cta-title">Imagine mornings like this – why not make it yours?</h2>
+      <a href="#booking" class="btn btn-primary">Reserve Your Stay Today</a>
+    </div>
+  </section>
+
+  <!-- Audience Section -->
+  <section class="audience-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Who is it for?</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="audience-card">
+            <i class="fas fa-users mb-3"></i>
+            <h4>Families wanting quality time</h4>
+            <p>Space to play, relax, and enjoy simple moments together.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="audience-card">
+            <i class="fas fa-heart mb-3"></i>
+            <h4>Couples seeking romance</h4>
+            <p>Uninterrupted mornings, shining sunsets, and perfect space just for two.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="audience-card">
+            <i class="fas fa-laptop mb-3"></i>
+            <h4>Remote professionals</h4>
+            <p>Strong Wi-Fi, silence when you need it, and a terrace that inspires focus and creativity.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="audience-card">
+            <i class="fas fa-clock mb-3"></i>
+            <h4>Travelers who enjoy slow living</h4>
+            <p>Wake up without alarms, breathe deeper, and move at your own pace.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="audience-card">
+            <i class="fas fa-spa mb-3"></i>
+            <h4>Wellness seekers</h4>
+            <p>A calming setting ideal for rest, reflection, or yoga in the fresh air.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Close to everything, yet far from the noise</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="location-card">
+            <div class="distance-badge">40 km</div>
+            <h4>Novi Sad attractions</h4>
+            <p>Culture, shopping, and dining within easy reach: SPENS Sports Center, Promenada Mall, Serbian National Theater, and Museum of Vojvodina.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="location-card">
+            <div class="distance-badge">18 km</div>
+            <h4>Fruška Gora National Park</h4>
+            <p>Hiking, fresh air, and panoramic views just a short drive away.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="location-card">
+            <div class="distance-badge">5 km</div>
+            <h4>Karlshuld Park</h4>
+            <p>A nearby green place for a quick stroll or morning jog.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="location-card">
+            <div class="distance-badge">4-14 km</div>
+            <h4>Local cafés & bars</h4>
+            <p>From Caffe Offside to Moto Gheto, discover local flavors and casual spots.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="location-card">
+            <div class="distance-badge">53 km</div>
+            <h4>Belgrade & Airport</h4>
+            <p>Easy access to Serbia's capital and Nikola Tesla Airport, about an hour's drive away.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta" id="booking">
+    <div class="container text-center">
+      <h2 class="final-cta-title">Ready to unwind in Beška?</h2>
+      <p class="final-cta-text">Your peaceful retreat awaits above the Danube</p>
+      <a href="#" class="btn btn-final">Book Your Stay Here</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2024 Panorama Beška. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
