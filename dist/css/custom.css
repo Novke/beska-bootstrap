@@ -120,6 +120,50 @@ p {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 46%;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  animation: fadeInUp 1s ease-out 0.5s both;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-indicator span {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.scroll-indicator i {
+  font-size: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
 /* ===== GALLERY SECTION ===== */
 .gallery-section {
   padding: 3rem 0;
