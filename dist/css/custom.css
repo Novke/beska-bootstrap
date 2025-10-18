@@ -174,7 +174,7 @@ p {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 350px;
+  height: 50vh;
 }
 
 .gallery-item img {
