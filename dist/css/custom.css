@@ -311,6 +311,21 @@ p {
   font-weight: 600;
 }
 
+.reviewer-avatar-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  overflow: visible;
+}
+
+.reviewer-avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .reviewer-info {
   flex: 1;
 }
