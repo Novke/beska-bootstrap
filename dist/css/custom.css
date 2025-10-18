@@ -266,6 +266,121 @@ p {
   transform: translateY(-2px);
 }
 
+/* ===== REVIEWS SECTION ===== */
+.reviews-section {
+  padding: 5rem 0;
+  background: var(--light-gray);
+}
+
+.review-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reviewer-avatar span {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-info h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--dark);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.review-stars {
+  margin-bottom: 0.5rem;
+}
+
+.review-stars i {
+  color: #f59e0b;
+  font-size: 0.9rem;
+  margin-right: 2px;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #4285f4;
+  font-weight: 500;
+}
+
+.verified-badge i {
+  font-size: 0.9rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.review-date {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 95, 45, 0.2);
+}
+
 /* ===== AUDIENCE SECTION ===== */
 .audience-section {
   padding: 5rem 0;
