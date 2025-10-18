@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Panorama Beaka  Villa Retreat"
+  },
+  "hero": {
+    "eyebrow": "Need a family escape where everyone can relax? Had enough of city noise, deadlines, and chaos?",
+    "title": "The rest you've been looking for",
+    "subtitle": "A private villa retreat in Beaka  where peace and comfort meet",
+    "cta": "See Available Dates",
+    "scrollIndicator": "Scroll to explore"
+  },
+  "gallery": {
+    "garden": "Garden & BBQ",
+    "terrace": "Terrace Views",
+    "interior": "Vintage Interior",
+    "fireplace": "Cozy Fireplace"
+  },
+  "emotional": {
+    "title": "Your peaceful getaway above the Danube",
+    "paragraph1": "Far from the rush of city life, Panorama Beaka is your invitation to pause. Wake up to terrace mornings in the fresh air, spend quiet afternoons in the garden, and watch golden sunsets unfold at day's end.",
+    "paragraph2": "Here, nature brings calm, the villa brings comfort, and you find the space to reconnect  with loved ones, with yourself, with silence."
+  },
+  "cta1": {
+    "title": "Imagine mornings like this  why not make it yours?",
+    "button": "See Available Dates"
+  },
+  "features": {
+    "title": "Everything you need for a quiet stay",
+    "space": {
+      "title": "Your space, your rules",
+      "desc": "Two bedrooms, a bathroom and a large living room, all private and entirely yours."
+    },
+    "home": {
+      "title": "Feel at home",
+      "desc": "Comfy living room, flat-screen TV, and a washing machine for longer stays."
+    },
+    "outdoors": {
+      "title": "Relax outdoors",
+      "desc": "Balcony, terrace, and garden views for fresh air and wide horizons."
+    },
+    "cook": {
+      "title": "Cook, grill & gather",
+      "desc": "Fully equipped kitchen, terrace dining, and BBQ facilities."
+    },
+    "comfort": {
+      "title": "Comfort in every season",
+      "desc": "Air conditioning and heating for perfect temperature anytime."
+    },
+    "wifi": {
+      "title": "Stay connected",
+      "desc": "Free WiFi across the property, strong enough for work or streaming."
+    },
+    "pets": {
+      "title": "Pets are welcome",
+      "desc": "Bring your friend at no extra charge."
+    },
+    "parking": {
+      "title": "Park without stress",
+      "desc": "Free on-site private parking."
+    },
+    "hosts": {
+      "title": "Welcoming hosts",
+      "desc": "English, Serbian, and Croatian spoken for smooth communication."
+    }
+  },
+  "audience": {
+    "title": "Who is it for?",
+    "families": {
+      "title": "Families wanting quality time",
+      "desc": "Space to play, relax, and enjoy simple moments together."
+    },
+    "couples": {
+      "title": "Couples seeking romance",
+      "desc": "Uninterrupted mornings, shining sunsets, and perfect space just for two."
+    },
+    "remote": {
+      "title": "Remote professionals",
+      "desc": "Strong Wi-Fi, silence when you need it, and a terrace that inspires focus and creativity."
+    },
+    "travelers": {
+      "title": "Travelers who enjoy slow living",
+      "desc": "Wake up without alarms, breathe deeper, and move at your own pace."
+    },
+    "wellness": {
+      "title": "Wellness seekers",
+      "desc": "A calming setting ideal for rest, reflection, or yoga in the fresh air."
+    }
+  },
+  "cta2": {
+    "title": "If this feels like you, your villa is ready.",
+    "button": "Reserve Your Stay Today"
+  },
+  "location": {
+    "title": "Close to everything, yet far from the noise",
+    "noviSad": {
+      "title": "Novi Sad attractions",
+      "desc": "Culture, shopping, and dining within easy reach: SPENS Sports Center, Promenada Mall, Serbian National Theater, and Museum of Vojvodina."
+    },
+    "fruskaGora": {
+      "title": "Fruška Gora National Park",
+      "desc": "Hiking, fresh air, and panoramic views just a short drive away."
+    },
+    "karlshuld": {
+      "title": "Karlshuld Park",
+      "desc": "A nearby green place for a quick stroll or morning jog."
+    },
+    "cafes": {
+      "title": "Local caf�s & bars",
+      "desc": "From Caffe Offside to Moto Gheto, discover local flavors and casual spots."
+    },
+    "belgrade": {
+      "title": "Belgrade & Airport",
+      "desc": "Easy access to Serbia's capital and Nikola Tesla Airport, about an hour's drive away."
+    }
+  },
+  "reviews": {
+    "title": "What Our Guests Say",
+    "verifiedBadge": "Verified Google Review",
+    "viewAll": "View All Reviews on Google",
+    "timeAgo": {
+      "weeks": "weeks ago",
+      "months": "months ago"
+    }
+  },
+  "finalCta": {
+    "title": "Ready to unwind in Beaka?",
+    "subtitle": "Your peaceful retreat awaits above the Danube",
+    "button": "Book Your Stay Here"
+  },
+  "footer": {
+    "copyright": "� 2024 Panorama Beaka. All rights reserved."
+  }
+}
