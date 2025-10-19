@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Panorama Beška - Vila za Odmor"
+  },
+  "hero": {
+    "eyebrow": "Potreban vam je porodični odmor gde svi mogu da se opuste? Dosta vam je gradske buke, rokova i haosa?",
+    "title": "Odmor koji ste tražili",
+    "subtitle": "Privatna vila u mestu Beška - gde se mir i udobnost susreću",
+    "cta": "Pogledajte Dostupne Termine",
+    "scrollIndicator": "Istražite"
+  },
+  "gallery": {
+    "garden": "Bašta i Roštilj",
+    "terrace": "Pogled sa Terase",
+    "interior": "Vintage Enterijer",
+    "fireplace": "Kamin"
+  },
+  "emotional": {
+    "title": "Vaš mirni odmor iznad Dunava",
+    "paragraph1": "Daleko od gradske vreve, Panorama Beaka je vaa poziv da zastanete. Probudite se uz jutarnji mir na terasi, provedite tihe popodne u baati i posmatrajte zlatne zalaske sunca na kraju dana.",
+    "paragraph2": "Ovde, priroda donosi mir, vila donosi udobnost, a vi pronalazite prostor da se povežete sa voljenim osobama, sa sobom, i sa tišinom."
+  },
+  "cta1": {
+    "title": "Zamislite ovakva jutra - zašto ne bi bila vaša?",
+    "button": "Pogledajte Dostupne Termine"
+  },
+  "features": {
+    "title": "Sve ato vam je potrebno za miran boravak",
+    "space": {
+      "title": "Vaš prostor, vaša pravila",
+      "desc": "Dve spavaće sobe, kupatilo i veliki dnevni boravak, sve privatno i u potpunosti vaše."
+    },
+    "home": {
+      "title": "Osećajte se kao kod kuće",
+      "desc": "Udoban dnevni boravak, TV sa ravnim ekranom i mašina za pranje veša za duže boravke."
+    },
+    "outdoors": {
+      "title": "Opustite se napolju",
+      "desc": "Balkon, terasa i pogled na baštu za svež vazduh i široke horizonte."
+    },
+    "cook": {
+      "title": "Okupite se, kuvajte i roštiljajte",
+      "desc": "Potpuno opremljena kuhinja, trpezarija na terasi i roštilj."
+    },
+    "comfort": {
+      "title": "Udobnost u svakom godišnjem dobu",
+      "desc": "Klima uređaj i grejanje za savršenu temperaturu u bilo koje vreme."
+    },
+    "wifi": {
+      "title": "Ostanite povezani",
+      "desc": "Besplatan WiFi u celom objektu, dovoljno jak za rad ili strimovanje."
+    },
+    "pets": {
+      "title": "Kućni ljubimci su dobrodošli",
+      "desc": "Povedite svog prijatelja bez dodatne naplate."
+    },
+    "parking": {
+      "title": "Parking bez stresa",
+      "desc": "Besplatan privatni parking na licu mesta."
+    },
+    "hosts": {
+      "title": "Gostoljubivi domaćini",
+      "desc": "Tečno govorimo engleski i srpski za nesmetanu komunikaciju."
+    }
+  },
+  "audience": {
+    "title": "Za koga je namenjeno?",
+    "families": {
+      "title": "Porodice koje žele kvalitetno vreme",
+      "desc": "Prostor za igru, opuatanje i uživanje u jednostavnim trenucima zajedno."
+    },
+    "couples": {
+      "title": "Parovi koji traže romansu",
+      "desc": "Neometana jutra, sjajni zalasci sunca i savršen prostor samo za vas dvoje."
+    },
+    "remote": {
+      "title": "Radnici na daljinu",
+      "desc": "Jak WiFi, tišina kada vam je potrebna i terasa koja inspiriše fokus i kreativnost."
+    },
+    "travelers": {
+      "title": "Putnici koji uživaju u sporom životu",
+      "desc": "Probudite se bez alarma, dišite dublje i krećite se vlastitim tempom."
+    },
+    "wellness": {
+      "title": "Oni koji teže zdravlju i blagostanju",
+      "desc": "Smirujuće okruženje idealno za odmor, razmišljanje ili jogu na svežem vazduhu."
+    }
+  },
+  "cta2": {
+    "title": "Ako vam ovo odgovara, Vaša vila je spremna.",
+    "button": "Rezervišite svoj boravak danas"
+  },
+  "location": {
+    "title": "Blizu svega, a daleko od buke",
+    "noviSad": {
+      "title": "Atrakcije Novog Sada",
+      "desc": "Kultura, kupovina i restorani na dohvat ruke: SPENS Sportski Centar, Promenada Mall, Srpsko Narodno Pozorište i Muzej Vojvodine."
+    },
+    "fruskaGora": {
+      "title": "Nacionalni Park Fruška Gora",
+      "desc": "Planinarenje, svež vazduh i panoramski pogledi su na kratku vožnju odavde."
+    },
+    "karlshuld": {
+      "title": "Park Karlshuld",
+      "desc": "Obližnji zeleni prostor za brzu šetnju ili jutarnji džoging."
+    },
+    "cafes": {
+      "title": "Lokalni kafići i barovi",
+      "desc": "Od Caffe Offside do Moto Gheto, otkrijte lokalne ukuse i opuštajuća mesta."
+    },
+    "belgrade": {
+      "title": "Beograd i Aerodrom",
+      "desc": "Lak pristup glavnom gradu Srbije i Aerodromu Nikola Tesla, oko sat vožnje."
+    }
+  },
+  "reviews": {
+    "title": "Šta Naši Gosti Kažu",
+    "verifiedBadge": "Verified Google Review",
+    "viewAll": "Pogledajte Sve Recenzije na Google-u",
+    "timeAgo": {
+      "weeks": "weeks ago",
+      "months": "months ago"
+    }
+  },
+  "finalCta": {
+    "title": "Spremni da se opustite u Bešci?",
+    "subtitle": "Vaš mirni odmor Vas čeka iznad Dunava",
+    "button": "Rezervišite Svoj Boravak Ovde"
+  },
+  "footer": {
+    "copyright": "� 2024 Panorama Beaka. Sva prava zadržana."
+  }
+}

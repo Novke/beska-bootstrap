@@ -1,7 +1,21 @@
-// i18n.js - Internationalization module for Panorama Beaka
+// i18n.js - Internationalization module for Panorama Beska
 
 let currentLang = 'en';
 let translations = {};
+
+// Get language from URL hash (#en, #sr) or localStorage
+function getLanguageFromURL() {
+  const hash = window.location.hash.substring(1); // Remove the #
+  if (hash === 'en' || hash === 'sr') {
+    return hash;
+  }
+  return localStorage.getItem('preferredLanguage') || 'en';
+}
+
+// Update URL hash when language changes
+function updateURLHash(lang) {
+  window.location.hash = lang;
+}
 
 // Load translations from JSON file
 async function loadTranslations(lang) {
@@ -14,6 +28,7 @@ async function loadTranslations(lang) {
     currentLang = lang;
     applyTranslations();
     updatePageTitle();
+    updateLanguageSwitcher();
   } catch (error) {
     console.error('Error loading translations:', error);
   }
@@ -43,7 +58,14 @@ function applyTranslations() {
     const translation = getTranslation(key);
 
     if (translation) {
-      element.textContent = translation;
+      // Preserve HTML content like icons for verified badge and view all button
+      if (element.querySelector('i.fab.fa-google')) {
+        const icon = element.querySelector('i.fab.fa-google').cloneNode(true);
+        element.textContent = ' ' + translation;
+        element.prepend(icon);
+      } else {
+        element.textContent = translation;
+      }
     }
   });
 
@@ -58,17 +80,43 @@ function updatePageTitle() {
   }
 }
 
+// Update language switcher button to show current language
+function updateLanguageSwitcher() {
+  const currentLangBtn = document.getElementById('current-lang');
+  if (currentLangBtn) {
+    if (currentLang === 'en') {
+      currentLangBtn.innerHTML = '<span class="flag">🇬🇧</span> EN';
+    } else {
+      currentLangBtn.innerHTML = '<span class="flag">🇷🇸</span> SR';
+    }
+  }
+}
+
 // Initialize translations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-  // Check for saved language preference or use default
-  const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-  loadTranslations(savedLang);
+  const lang = getLanguageFromURL();
+  loadTranslations(lang);
+
+  // Listen for hash changes (when user clicks back/forward)
+  window.addEventListener('hashchange', () => {
+    const newLang = getLanguageFromURL();
+    if (newLang !== currentLang) {
+      loadTranslations(newLang);
+    }
+  });
 });
 
 // Function to change language
 function changeLanguage(lang) {
   localStorage.setItem('preferredLanguage', lang);
+  updateURLHash(lang);
   loadTranslations(lang);
+
+  // Close dropdown after selection
+  const dropdown = document.querySelector('.lang-dropdown');
+  if (dropdown) {
+    dropdown.classList.remove('show');
+  }
 }
 
 // Export functions for use in other scripts

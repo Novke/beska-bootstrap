@@ -23,6 +23,21 @@
 </head>
 <body>
 
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button id="current-lang" class="lang-btn" onclick="document.querySelector('.lang-dropdown').classList.toggle('show')">
+      <span class="flag">🇬🇧</span> EN
+    </button>
+    <div class="lang-dropdown">
+      <a href="#en" class="lang-option" onclick="window.i18n.changeLanguage('en')">
+        <span class="flag">🇬🇧</span> English
+      </a>
+      <a href="#sr" class="lang-option" onclick="window.i18n.changeLanguage('sr')">
+        <span class="flag">🇷🇸</span> Srpski
+      </a>
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
     <div class="hero-overlay"></div>
@@ -448,6 +463,18 @@
         top: window.innerHeight,
         behavior: 'smooth'
       });
+    });
+
+    // Close language dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+      const langSwitcher = document.querySelector('.lang-switcher');
+      const dropdown = document.querySelector('.lang-dropdown');
+
+      if (langSwitcher && !langSwitcher.contains(event.target)) {
+        if (dropdown) {
+          dropdown.classList.remove('show');
+        }
+      }
     });
   </script>
 </body>
