@@ -85,9 +85,9 @@ function updateLanguageSwitcher() {
   const currentLangBtn = document.getElementById('current-lang');
   if (currentLangBtn) {
     if (currentLang === 'en') {
-      currentLangBtn.innerHTML = '<span class="flag">🇬🇧</span> EN';
+      currentLangBtn.innerHTML = '<img src="https://flagcdn.com/w20/gb.png" alt="EN" class="flag-img"> EN';
     } else {
-      currentLangBtn.innerHTML = '<span class="flag">🇷🇸</span> SR';
+      currentLangBtn.innerHTML = '<img src="https://flagcdn.com/w20/rs.png" alt="SR" class="flag-img"> SR';
     }
   }
 }
