@@ -291,28 +291,6 @@ p {
   background: var(--light);
 }
 
-.gallery-container-swipe {
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  display: none; /* Hidden by default, shown on mobile */
-}
-
-.gallery-container-swipe::-webkit-scrollbar {
-  display: none;
-}
-
-.gallery-container-swipe .row {
-  flex-wrap: nowrap;
-  width: max-content;
-}
-
-.gallery-container-swipe .gallery-item {
-  scroll-snap-align: start;
-}
-
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -782,36 +760,6 @@ p {
   
   .gallery-item {
     height: 300px;
-    width: 85vw !important;
-    flex: 0 0 85vw;
-    max-width: 85vw;
-  }
-
-  /* Enable swipe gallery on mobile */
-  .gallery-container-swipe {
-    display: block !important;
-  }
-
-  .gallery-section .container-fluid {
-    padding: 0;
-  }
-
-  .gallery-section .row.g-2 {
-    margin: 0;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
-  /* Add swipe indicator */
-  .gallery-section::after {
-    content: "← Swipe →";
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.875rem;
-    color: var(--gray);
-    font-weight: 500;
-    letter-spacing: 1px;
   }
   
   .feature-card, .audience-card, .location-card {
@@ -824,12 +772,6 @@ p {
   .feature-icon, .audience-card i {
     min-width: 64px;
     min-height: 64px;
-  }
-
-  /* Gallery items touch targets */
-  .gallery-item {
-    min-height: 200px;
-    touch-action: pan-x;
   }
 
   /* Optimized section spacing for mobile */
@@ -943,10 +885,7 @@ p {
   }
 
   .gallery-item {
-    height: 280px;
-    width: 90vw !important;
-    flex: 0 0 90vw;
-    max-width: 90vw;
+    height: 250px;
   }
 
   section {

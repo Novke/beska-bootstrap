@@ -59,8 +59,8 @@
 
   <!-- Gallery Section -->
   <section id="gallery" class="gallery-section">
-    <div class="container-fluid px-0 gallery-container-swipe">
-      <div class="row g-2 justify-content-center gallery-row">
+    <div class="container-fluid px-0">
+      <div class="row g-2 justify-content-center">
         <div class="col-md-6 col-12">
           <div class="gallery-item">
             <img src="assets/rostilj.png" alt="Garden & BBQ" class="img-fluid" loading="lazy">
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="row g-2 mt-0 justify-content-center gallery-row">
+      <div class="row g-2 mt-0 justify-content-center">
         <div class="col-md-6 col-12">
           <div class="gallery-item">
             <img src="assets/unutra.png" alt="Interior" class="img-fluid" loading="lazy">
@@ -478,34 +478,6 @@
         }
       }
     });
-
-    // Touch-friendly gallery swipe on mobile
-    if (window.innerWidth <= 768) {
-      const galleryContainer = document.querySelector('.gallery-container-swipe');
-      if (galleryContainer) {
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        galleryContainer.addEventListener('touchstart', (e) => {
-          isDown = true;
-          startX = e.touches[0].pageX - galleryContainer.offsetLeft;
-          scrollLeft = galleryContainer.scrollLeft;
-        });
-
-        galleryContainer.addEventListener('touchend', () => {
-          isDown = false;
-        });
-
-        galleryContainer.addEventListener('touchmove', (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.touches[0].pageX - galleryContainer.offsetLeft;
-          const walk = (x - startX) * 2;
-          galleryContainer.scrollLeft = scrollLeft - walk;
-        });
-      }
-    }
   </script>
 </body>
 </html>
