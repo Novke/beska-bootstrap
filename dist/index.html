@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Panorama Beška - Your peaceful villa retreat above the Danube. Private accommodation with stunning views, perfect for families, couples, and remote workers.">
+  <meta name="theme-color" content="#2c5f2d">
   <title>Panorama Beška – Villa Retreat</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   
@@ -57,11 +59,11 @@
 
   <!-- Gallery Section -->
   <section id="gallery" class="gallery-section">
-    <div class="container-fluid px-0">
-      <div class="row g-2 justify-content-center">
+    <div class="container-fluid px-0 gallery-container-swipe">
+      <div class="row g-2 justify-content-center gallery-row">
         <div class="col-md-6 col-12">
           <div class="gallery-item">
-            <img src="assets/rostilj.png" alt="Garden & BBQ" class="img-fluid">
+            <img src="assets/rostilj.png" alt="Garden & BBQ" class="img-fluid" loading="lazy">
             <div class="gallery-overlay">
               <span data-i18n="gallery.garden">Garden & BBQ</span>
             </div>
@@ -69,17 +71,17 @@
         </div>
         <div class="col-md-6 col-12">
           <div class="gallery-item">
-            <img src="assets/roze.png" alt="Terrace Views" class="img-fluid">
+            <img src="assets/roze.png" alt="Terrace Views" class="img-fluid" loading="lazy">
             <div class="gallery-overlay">
               <span data-i18n="gallery.terrace">Terrace Views</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="row g-2 mt-0 justify-content-center">
+      <div class="row g-2 mt-0 justify-content-center gallery-row">
         <div class="col-md-6 col-12">
           <div class="gallery-item">
-            <img src="assets/unutra.png" alt="Interior" class="img-fluid">
+            <img src="assets/unutra.png" alt="Interior" class="img-fluid" loading="lazy">
             <div class="gallery-overlay">
               <span data-i18n="gallery.interior">Vintage Interior</span>
             </div>
@@ -87,7 +89,7 @@
         </div>
         <div class="col-md-6 col-12">
           <div class="gallery-item">
-            <img src="assets/kamin.png" alt="Cozy Fireplace" class="img-fluid">
+            <img src="assets/kamin.png" alt="Cozy Fireplace" class="img-fluid" loading="lazy">
             <div class="gallery-overlay">
               <span data-i18n="gallery.fireplace">Cozy Fireplace</span>
             </div>
@@ -322,7 +324,7 @@
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar reviewer-avatar-image">
-                <img src="assets/reviews/hera.png" alt="Hera">
+                <img src="assets/reviews/hera.png" alt="Hera" loading="lazy">
               </div>
               <div class="reviewer-info">
                 <h5>Hera</h5>
@@ -344,7 +346,7 @@
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar reviewer-avatar-image">
-                <img src="assets/reviews/aleksandar.png" alt="Aleksandar Jocović">
+                <img src="assets/reviews/aleksandar.png" alt="Aleksandar Jocović" loading="lazy">
               </div>
               <div class="reviewer-info">
                 <h5>Aleksandar Jocović</h5>
@@ -368,7 +370,7 @@
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar reviewer-avatar-image">
-                <img src="assets/reviews/nikola.png" alt="Nikola Knežević">
+                <img src="assets/reviews/nikola.png" alt="Nikola Knežević" loading="lazy">
               </div>
               <div class="reviewer-info">
                 <h5>Nikola Knežević</h5>
@@ -390,7 +392,7 @@
           <div class="review-card">
             <div class="review-header">
               <div class="reviewer-avatar reviewer-avatar-image">
-                <img src="assets/reviews/sasha.png" alt="Sasha Gerasimenko">
+                <img src="assets/reviews/sasha.png" alt="Sasha Gerasimenko" loading="lazy">
               </div>
               <div class="reviewer-info">
                 <h5>Sasha Gerasimenko</h5>
@@ -476,6 +478,34 @@
         }
       }
     });
+
+    // Touch-friendly gallery swipe on mobile
+    if (window.innerWidth <= 768) {
+      const galleryContainer = document.querySelector('.gallery-container-swipe');
+      if (galleryContainer) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        galleryContainer.addEventListener('touchstart', (e) => {
+          isDown = true;
+          startX = e.touches[0].pageX - galleryContainer.offsetLeft;
+          scrollLeft = galleryContainer.scrollLeft;
+        });
+
+        galleryContainer.addEventListener('touchend', () => {
+          isDown = false;
+        });
+
+        galleryContainer.addEventListener('touchmove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.touches[0].pageX - galleryContainer.offsetLeft;
+          const walk = (x - startX) * 2;
+          galleryContainer.scrollLeft = scrollLeft - walk;
+        });
+      }
+    }
   </script>
 </body>
 </html>
