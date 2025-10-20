@@ -162,12 +162,15 @@ p {
 .hero-section {
   position: relative;
   height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile browsers */
   min-height: 600px;
+  max-height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../assets/zalazak.png') center/cover no-repeat;
+  background: url('../assets/zalazak.png') center center/cover no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .hero-overlay {
@@ -176,9 +179,10 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, 
-    rgba(0, 0, 0, 0.4) 0%, 
-    rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0.7) 100%);
   z-index: 1;
 }
 
@@ -242,7 +246,8 @@ p {
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;
-  left: 46%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
   color: white;
@@ -723,17 +728,88 @@ p {
     margin-bottom: 1.25rem;
   }
 
-  /* Mobile-optimized hero image */
+  /* Mobile-optimized hero image with robust viewport handling */
   .hero-section {
-    height: 80vh;
-    min-height: 500px;
-    background: url('../assets/zalazak-mobile.png') center/cover no-repeat;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height - accounts for mobile browser UI */
+    min-height: 600px;
+    max-height: none; /* Remove max-height restriction on mobile */
+    background: url('../assets/zalazak-mobile-long.png') center center/cover no-repeat;
     background-attachment: scroll; /* Better performance on mobile */
+    background-position: center center;
     padding: 1rem;
+    overflow: hidden;
+  }
+
+  /* Support for different aspect ratios */
+  /* 16:9 standard phones */
+  @media (max-width: 768px) and (min-aspect-ratio: 9/16) and (max-aspect-ratio: 16/9) {
+    .hero-section {
+      background-position: center center;
+    }
+  }
+
+  /* 19.5:9 iPhones (11/12/13/14) */
+  @media (max-width: 768px) and (min-aspect-ratio: 19/9) {
+    .hero-section {
+      background-position: center 45%;
+    }
+  }
+
+  /* 20:9 Samsung and other tall phones */
+  @media (max-width: 768px) and (min-aspect-ratio: 20/9) {
+    .hero-section {
+      background-position: center 40%;
+    }
+  }
+
+  /* 21:9 Sony Xperia and ultra-tall phones */
+  @media (max-width: 768px) and (min-aspect-ratio: 21/9) {
+    .hero-section {
+      background-position: center 35%;
+    }
+  }
+
+  /* Fallback for browsers that don't support dvh */
+  @supports not (height: 100dvh) {
+    .hero-section {
+      height: 100vh;
+      min-height: 100vh;
+    }
+  }
+
+  /* Additional gradient at bottom for seamless transition */
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(248, 249, 250, 0.3) 100%);
+    z-index: 2;
+    pointer-events: none;
   }
 
   .hero-content {
     padding: 1.5rem 1rem;
+  }
+
+  /* Adjust scroll indicator position for mobile */
+  .scroll-indicator {
+    bottom: 1.5rem;
+    z-index: 10; /* Ensure it's above the ::after gradient */
+  }
+
+  /* iOS-specific fixes for safe areas and notches */
+  @supports (padding: env(safe-area-inset-bottom)) {
+    .hero-section {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .scroll-indicator {
+      bottom: calc(1.5rem + env(safe-area-inset-bottom));
+    }
   }
 
   .hero-title {
@@ -908,12 +984,6 @@ p {
     padding: 1.5rem 1.25rem;
   }
 
-  /* Scroll indicator positioning */
-  .scroll-indicator {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .scroll-indicator span {
     font-size: 0.75rem;
   }
@@ -922,6 +992,37 @@ p {
   .lang-btn {
     padding: 0.5rem 0.875rem;
     font-size: 0.8125rem;
+  }
+}
+
+/* ===== LANDSCAPE MOBILE PHONES ===== */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 400px;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .scroll-indicator {
+    bottom: 1rem;
+  }
+
+  .scroll-indicator span {
+    display: none;
   }
 }
 
@@ -937,6 +1038,12 @@ p {
 
   .hero-title {
     font-size: 3rem;
+  }
+
+  .hero-section {
+    height: 100vh;
+    height: 100dvh;
+    max-height: 900px;
   }
 
   .feature-card h4,
