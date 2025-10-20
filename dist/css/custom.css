@@ -1,7 +1,7 @@
 /* ===== GLOBAL STYLES ===== */
 :root {
-  --primary-color: #845160;
-  --secondary-color: #a86e7a;
+  --primary-color: #56313f;
+  --secondary-color: #724556;
   --accent-color: #f59e0b;
   --dark: #0f0f0f;
   --darker: #0a0a0a;
@@ -44,7 +44,7 @@ body {
 
 .lang-btn {
   background: rgba(26, 26, 26, 0.95);
-  border: 2px solid rgba(132, 81, 96, 0.4);
+  border: 2px solid rgba(86, 49, 63, 0.4);
   border-radius: 50px;
   padding: 0.625rem 1.25rem;
   font-size: 0.95rem;
@@ -60,9 +60,9 @@ body {
 }
 
 .lang-btn:hover {
-  background: rgba(132, 81, 96, 0.2);
+  background: rgba(86, 49, 63, 0.2);
   border-color: var(--primary-color);
-  box-shadow: 0 4px 12px rgba(132, 81, 96, 0.3);
+  box-shadow: 0 4px 12px rgba(86, 49, 63, 0.3);
   transform: translateY(-2px);
 }
 
@@ -399,7 +399,7 @@ p {
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(132, 81, 96, 0.3);
+  box-shadow: 0 10px 30px rgba(86, 49, 63, 0.3);
   border-color: var(--primary-color);
 }
 
@@ -498,7 +498,7 @@ p {
 
 .review-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(132, 81, 96, 0.3);
+  box-shadow: 0 10px 30px rgba(86, 49, 63, 0.3);
   border-color: var(--primary-color);
 }
 
@@ -608,7 +608,7 @@ p {
   background: var(--primary-color);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(132, 81, 96, 0.4);
+  box-shadow: 0 4px 12px rgba(86, 49, 63, 0.4);
 }
 
 /* ===== AUDIENCE SECTION ===== */
@@ -629,7 +629,7 @@ p {
 
 .audience-card:hover {
   background: var(--lighter);
-  box-shadow: 0 10px 30px rgba(132, 81, 96, 0.3);
+  box-shadow: 0 10px 30px rgba(86, 49, 63, 0.3);
   transform: translateY(-5px);
   border-color: var(--primary-color);
 }
@@ -667,7 +667,7 @@ p {
 }
 
 .location-card:hover {
-  box-shadow: 0 10px 30px rgba(132, 81, 96, 0.3);
+  box-shadow: 0 10px 30px rgba(86, 49, 63, 0.3);
   transform: translateY(-5px);
   border-color: var(--primary-color);
 }
@@ -1160,11 +1160,11 @@ p {
 
 /* Better tap highlighting */
 * {
-  -webkit-tap-highlight-color: rgba(132, 81, 96, 0.2);
+  -webkit-tap-highlight-color: rgba(86, 49, 63, 0.2);
 }
 
 a, button, .btn, .gallery-item, .feature-card, .audience-card, .location-card {
-  -webkit-tap-highlight-color: rgba(132, 81, 96, 0.3);
+  -webkit-tap-highlight-color: rgba(86, 49, 63, 0.3);
 }
 
 /* ===== FOCUS STATES FOR ACCESSIBILITY ===== */
