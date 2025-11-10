@@ -3,10 +3,10 @@
 let currentLang = 'en';
 let translations = {};
 
-// Get language from URL hash (#en, #sr) or localStorage
+// Get language from URL hash (#en, #sr, #ru) or localStorage
 function getLanguageFromURL() {
   const hash = window.location.hash.substring(1); // Remove the #
-  if (hash === 'en' || hash === 'sr') {
+  if (hash === 'en' || hash === 'sr' || hash === 'ru') {
     return hash;
   }
   return localStorage.getItem('preferredLanguage') || 'en';
@@ -86,8 +86,10 @@ function updateLanguageSwitcher() {
   if (currentLangBtn) {
     if (currentLang === 'en') {
       currentLangBtn.innerHTML = '<img src="https://flagcdn.com/w20/gb.png" alt="EN" class="flag-img"> EN';
-    } else {
+    } else if (currentLang === 'sr') {
       currentLangBtn.innerHTML = '<img src="https://flagcdn.com/w20/rs.png" alt="SR" class="flag-img"> SR';
+    } else if (currentLang === 'ru') {
+      currentLangBtn.innerHTML = '<img src="https://flagcdn.com/w20/ru.png" alt="RU" class="flag-img"> RU';
     }
   }
 }
