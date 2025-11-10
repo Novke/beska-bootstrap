@@ -18,7 +18,7 @@
   "emotional": {
     "title": "Your peaceful getaway above the Danube",
     "paragraph1": "Far from the rush of city life, Panorama Beška is your invitation to pause. Wake up to terrace mornings in the fresh air, spend quiet afternoons in the garden, and watch golden sunsets unfold at day's end.",
-    "paragraph2": "Here, nature brings calm, the villa brings comfort, and you find the space to reconnect with loved ones, with yourself, with silence."
+    "paragraph2": "Here, nature brings calm, the villa brings comfort, and you find the space to reconnect – with loved ones, with yourself, with silence."
   },
   "cta1": {
     "title": "Imagine mornings like this - why not make it yours?",
@@ -85,7 +85,7 @@
       "desc": "A nearby green place for a quick stroll or morning jog."
     },
     "cafes": {
-      "title": "Local caf�s & bars",
+      "title": "Local cafes & bars",
       "desc": "From Caffe Offside to Moto Gheto, discover local flavors and casual spots."
     },
     "belgrade": {
@@ -108,6 +108,6 @@
     "button": "Book Your Stay Here"
   },
   "footer": {
-    "copyright": "� 2024 Panorama Beška. All rights reserved."
+    "copyright": "© 2024 Panorama Beška. All rights reserved."
   }
 }

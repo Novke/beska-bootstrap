@@ -17,7 +17,7 @@
   },
   "emotional": {
     "title": "Vaš mirni odmor iznad Dunava",
-    "paragraph1": "Daleko od gradske vreve, Panorama Beška je vaa poziv da zastanete. Probudite se uz jutarnji mir na terasi, provedite tihe popodne u baati i posmatrajte zlatne zalaske sunca na kraju dana.",
+    "paragraph1": "Daleko od gradske vreve, Panorama Beška je vaš poziv da zastanete. Probudite se uz jutarnji mir na terasi, provedite tihe popodne u bašti i posmatrajte zlatne zalaske sunca na kraju dana.",
     "paragraph2": "Ovde, priroda donosi mir, vila donosi udobnost, a vi pronalazite prostor da se povežete sa voljenim osobama, sa sobom, i sa tišinom."
   },
   "cta1": {
@@ -51,7 +51,7 @@
     "title": "Za koga je namenjeno?",
     "families": {
       "title": "Porodice koje žele kvalitetno vreme",
-      "desc": "Prostor za igru, opuatanje i uživanje u jednostavnim trenucima zajedno."
+      "desc": "Prostor za igru, opuštanje i uživanje u jednostavnim trenucima zajedno."
     },
     "couples": {
       "title": "Parovi koji traže romansu",
@@ -108,6 +108,6 @@
     "button": "Rezervišite Svoj Boravak Ovde"
   },
   "footer": {
-    "copyright": "� 2024 Panorama Beška. Sva prava zadržana."
+    "copyright": "© 2024 Panorama Beška. Sva prava zadržana."
   }
 }
