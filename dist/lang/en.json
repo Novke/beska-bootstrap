@@ -30,10 +30,6 @@
       "title": "Your space, your rules",
       "desc": "Two bedrooms, a bathroom and a large living room, all private and entirely yours."
     },
-    "home": {
-      "title": "Feel at home",
-      "desc": "Comfy living room, flat-screen TV, and a washing machine for longer stays."
-    },
     "outdoors": {
       "title": "Relax outdoors",
       "desc": "Balcony, terrace, and garden views for fresh air and wide horizons."
@@ -42,10 +38,6 @@
       "title": "Cook, grill & gather",
       "desc": "Fully equipped kitchen, terrace dining, and BBQ facilities."
     },
-    "comfort": {
-      "title": "Comfort in every season",
-      "desc": "Air conditioning and heating for perfect temperature anytime."
-    },
     "wifi": {
       "title": "Stay connected",
       "desc": "Free WiFi across the property, strong enough for work or streaming."
@@ -53,14 +45,6 @@
     "pets": {
       "title": "Pets are welcome",
       "desc": "Bring your friend at no extra charge."
-    },
-    "parking": {
-      "title": "Park without stress",
-      "desc": "Free on-site private parking."
-    },
-    "hosts": {
-      "title": "Welcoming hosts",
-      "desc": "English, Serbian, and Croatian spoken for smooth communication."
     }
   },
   "audience": {
@@ -77,13 +61,9 @@
       "title": "Remote professionals",
       "desc": "Strong Wi-Fi, silence when you need it, and a terrace that inspires focus and creativity."
     },
-    "travelers": {
-      "title": "Travelers who enjoy slow living",
-      "desc": "Wake up without alarms, breathe deeper, and move at your own pace."
-    },
-    "wellness": {
-      "title": "Wellness seekers",
-      "desc": "A calming setting ideal for rest, reflection, or yoga in the fresh air."
+    "slowLiving": {
+      "title": "Slow Living & Wellness Seekers",
+      "desc": "Wake up without alarms, breathe deeper, and find your perfect setting for rest, reflection, or yoga in the fresh air."
     }
   },
   "cta2": {

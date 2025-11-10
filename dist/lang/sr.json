@@ -30,10 +30,6 @@
       "title": "Vaš prostor, vaša pravila",
       "desc": "Dve spavaće sobe, kupatilo i veliki dnevni boravak, sve privatno i u potpunosti vaše."
     },
-    "home": {
-      "title": "Osećajte se kao kod kuće",
-      "desc": "Udoban dnevni boravak, TV sa ravnim ekranom i mašina za pranje veša za duže boravke."
-    },
     "outdoors": {
       "title": "Opustite se napolju",
       "desc": "Balkon, terasa i pogled na baštu za svež vazduh i široke horizonte."
@@ -42,10 +38,6 @@
       "title": "Okupite se, kuvajte i roštiljajte",
       "desc": "Potpuno opremljena kuhinja, trpezarija na terasi i roštilj."
     },
-    "comfort": {
-      "title": "Udobnost u svakom godišnjem dobu",
-      "desc": "Klima uređaj i grejanje za savršenu temperaturu u bilo koje vreme."
-    },
     "wifi": {
       "title": "Ostanite povezani",
       "desc": "Besplatan WiFi u celom objektu, dovoljno jak za rad ili strimovanje."
@@ -53,14 +45,6 @@
     "pets": {
       "title": "Kućni ljubimci su dobrodošli",
       "desc": "Povedite svog prijatelja bez dodatne naplate."
-    },
-    "parking": {
-      "title": "Parking bez stresa",
-      "desc": "Besplatan privatni parking na licu mesta."
-    },
-    "hosts": {
-      "title": "Gostoljubivi domaćini",
-      "desc": "Tečno govorimo engleski i srpski za nesmetanu komunikaciju."
     }
   },
   "audience": {
@@ -77,13 +61,9 @@
       "title": "Radnici na daljinu",
       "desc": "Jak WiFi, tišina kada vam je potrebna i terasa koja inspiriše fokus i kreativnost."
     },
-    "travelers": {
-      "title": "Putnici koji uživaju u sporom životu",
-      "desc": "Probudite se bez alarma, dišite dublje i krećite se vlastitim tempom."
-    },
-    "wellness": {
-      "title": "Oni koji teže zdravlju i blagostanju",
-      "desc": "Smirujuće okruženje idealno za odmor, razmišljanje ili jogu na svežem vazduhu."
+    "slowLiving": {
+      "title": "Ljubitelji Sporog Života i Blagostanja",
+      "desc": "Probudite se bez alarma, dišite dublje i pronađite savršeno okruženje za odmor, razmišljanje ili jogu na svežem vazduhu."
     }
   },
   "cta2": {
