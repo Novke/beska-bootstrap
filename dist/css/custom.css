@@ -16,21 +16,6 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== HERO SECTION FIXES ===== */
-/* Move hero content down to avoid language switcher overlap */
-.hero-content {
-  margin-top: 10vh;
-}
-
-/* Fix scroll indicator to bottom of viewport */
-.scroll-indicator {
-  position: fixed !important;
-  bottom: 2rem;
-  transform: translateX(-50%);
-  margin-top: 0 !important;
-  z-index: 10;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -825,12 +810,6 @@ p {
 
   .hero-content {
     padding: 1.5rem 1rem;
-    margin-top: 8vh;
-  }
-
-  /* Ensure scroll indicator stays at bottom on mobile */
-  .scroll-indicator {
-    bottom: 1.5rem;
   }
 
   /* iOS-specific fixes for safe areas and notches */
@@ -840,7 +819,7 @@ p {
     }
 
     .scroll-indicator {
-      bottom: calc(1.5rem + env(safe-area-inset-bottom)) !important;
+      bottom: calc(1.5rem + env(safe-area-inset-bottom));
     }
   }
 
@@ -1056,7 +1035,6 @@ p {
 
   .hero-content {
     padding: 0.5rem;
-    margin-top: 3vh;
   }
 
   .hero-title {
@@ -1067,10 +1045,6 @@ p {
   .hero-eyebrow {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
-  }
-
-  .scroll-indicator {
-    bottom: 1rem;
   }
 
   .scroll-indicator span {
@@ -1096,10 +1070,6 @@ p {
     height: 100vh;
     height: 100dvh;
     max-height: 900px;
-  }
-
-  .hero-content {
-    margin-top: 8vh;
   }
 
   .feature-card h4,
