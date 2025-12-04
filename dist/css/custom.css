@@ -690,9 +690,158 @@ p {
 
 .final-cta-text {
   font-size: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   opacity: 0.95;
   color: white;
+}
+
+.final-cta-booking-text {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  border: 3px solid white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  transition: var(--transition);
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.contact-icon:hover {
+  background: white;
+  color: var(--primary-color);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+}
+
+.contact-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Phone Popup Styles */
+.phone-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  backdrop-filter: blur(5px);
+}
+
+.phone-popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.phone-popup-content {
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: var(--transition);
+}
+
+.phone-popup-overlay.show .phone-popup-content {
+  transform: scale(1);
+}
+
+.phone-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--gray);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.phone-popup-close:hover {
+  color: var(--primary-color);
+  transform: rotate(90deg);
+}
+
+.phone-popup-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.phone-popup-content h3 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.phone-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.phone-number:hover {
+  background: var(--light-gray);
+}
+
+.phone-popup-hint {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin: 0;
 }
 
 .btn-final {
@@ -913,7 +1062,42 @@ p {
 
   .final-cta-text {
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .final-cta-booking-text {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.875rem 1.75rem;
+    border-width: 2px;
+  }
+
+  .contact-icons {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 1.25rem;
+  }
+
+  /* Phone popup optimized for mobile */
+  .phone-popup-content {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .phone-number {
+    font-size: 1.25rem;
+  }
+
+  .phone-popup-icon {
+    font-size: 2.5rem;
   }
 
   /* Card typography optimization */

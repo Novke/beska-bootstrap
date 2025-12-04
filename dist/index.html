@@ -383,9 +383,34 @@
     <div class="container text-center">
       <h2 class="final-cta-title" data-i18n="finalCta.title">Ready to unwind in Beška?</h2>
       <p class="final-cta-text" data-i18n="finalCta.subtitle">Your peaceful retreat awaits above the Danube</p>
-      <a href="#" class="btn btn-final" data-i18n="finalCta.button">Book Your Stay Here</a>
+      <p class="final-cta-booking-text" data-i18n="finalCta.text">Book your stay here</p>
+      <div class="contact-icons">
+        <a href="tel:+381644841799" class="contact-icon" id="phone-icon" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://www.instagram.com/beska_panorama" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.booking.com/hotel/rs/panorama-beska.html" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="Booking.com">
+          <i class="fas fa-bed"></i>
+        </a>
+        <a href="https://www.airbnb.com/rooms/1452939123871698149?source_impression_id=p3_1764878426_P3gPJl3tnui4rm06" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="Airbnb">
+          <i class="fab fa-airbnb"></i>
+        </a>
+      </div>
     </div>
   </section>
+
+  <!-- Phone Popup Modal -->
+  <div id="phone-popup" class="phone-popup-overlay">
+    <div class="phone-popup-content">
+      <button class="phone-popup-close" aria-label="Close">&times;</button>
+      <i class="fas fa-phone phone-popup-icon"></i>
+      <h3>Contact Us</h3>
+      <p class="phone-number">+381 64 484 1799</p>
+      <p class="phone-popup-hint">Click to copy the number</p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -436,6 +461,91 @@
         }
       }
     });
+
+    // Phone icon functionality - show popup on desktop, allow call on mobile
+    const phoneIcon = document.getElementById('phone-icon');
+    const phonePopup = document.getElementById('phone-popup');
+    const phonePopupClose = document.querySelector('.phone-popup-close');
+    const phoneNumber = document.querySelector('.phone-number');
+
+    // Check if device is mobile
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Handle phone icon click
+    if (phoneIcon) {
+      phoneIcon.addEventListener('click', function(event) {
+        // If not mobile device, prevent default and show popup
+        if (!isMobileDevice()) {
+          event.preventDefault();
+          phonePopup.classList.add('show');
+        }
+        // On mobile, allow the tel: link to work normally (no preventDefault)
+      });
+    }
+
+    // Close popup when clicking the close button
+    if (phonePopupClose) {
+      phonePopupClose.addEventListener('click', function() {
+        phonePopup.classList.remove('show');
+      });
+    }
+
+    // Close popup when clicking outside the popup content
+    if (phonePopup) {
+      phonePopup.addEventListener('click', function(event) {
+        if (event.target === phonePopup) {
+          phonePopup.classList.remove('show');
+        }
+      });
+    }
+
+    // Copy phone number to clipboard when clicked
+    if (phoneNumber) {
+      phoneNumber.addEventListener('click', function() {
+        const number = phoneNumber.textContent;
+
+        // Modern way to copy to clipboard
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(number).then(function() {
+            // Show feedback
+            const originalText = phoneNumber.textContent;
+            phoneNumber.textContent = 'Copied!';
+            phoneNumber.style.color = '#4CAF50';
+
+            setTimeout(function() {
+              phoneNumber.textContent = originalText;
+              phoneNumber.style.color = '';
+            }, 1500);
+          });
+        } else {
+          // Fallback for older browsers
+          const textArea = document.createElement('textarea');
+          textArea.value = number;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-999999px';
+          document.body.appendChild(textArea);
+          textArea.select();
+
+          try {
+            document.execCommand('copy');
+            const originalText = phoneNumber.textContent;
+            phoneNumber.textContent = 'Copied!';
+            phoneNumber.style.color = '#4CAF50';
+
+            setTimeout(function() {
+              phoneNumber.textContent = originalText;
+              phoneNumber.style.color = '';
+            }, 1500);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+          }
+
+          document.body.removeChild(textArea);
+        }
+      });
+    }
   </script>
 </body>
 </html>
